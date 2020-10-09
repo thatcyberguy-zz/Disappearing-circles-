@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disappearing circles</title>
+
+	<style type="text/css">
+		
+		#red{
+			background-color: red;
+		
+		}
+		#blue{
+			background-color: blue;
+		}
+		#yellow{background-color: yellow;
+		}
+
+		.circles{
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			margin: 5px;
+			float: left;
+		}
+		
+		.circles p{
+			color: #fff;
+			position: relative;
+			margin-left: 10px;
+
+
+		}
+		
+		}
+	</style>
+</head>
+<body>
+
+	<div class="circles" id="red" >
+		<p>Click to remove me</p>
+	</div>
+
+	<div id="blue" class="circles">
+		<p>I am Mr. Blue, DO NOT click</p>
+	</div>
+
+	<div id="yellow" class="circles">
+		<p style="color: #000;">Unclickable 😊</p>
+	</div>
+
+	<script type="text/javascript">
+		document.getElementById('red').onclick = function(){
+
+			document.getElementById('red').style.display = "none";
+		}
+
+		document.getElementById('blue').onclick = function(){
+
+			document.getElementById('blue').style.display = "none";
+		}
+		document.getElementById('yellow').onclick = function(){
+
+			document.getElementById('yellow').style.display = "none";
+		}
+
+
+	</script>
+
+</body>
+</html>
